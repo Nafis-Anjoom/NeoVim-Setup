@@ -42,19 +42,21 @@ require("lazy").setup({
     },
 
     -- lsp-zeo
-    { 'williamboman/mason.nvim' },
+    {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
-    { 'neovim/nvim-lspconfig' },
+    {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
     {'L3MON4D3/LuaSnip'},
 
-    { 'nvim-lualine/lualine.nvim' },
+    {'nvim-lualine/lualine.nvim'},
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+    {"nvim-treesitter/nvim-treesitter-textobjects"},
 
-    { 'windwp/nvim-ts-autotag' },
-    { 'tpope/vim-fugitive' },
-    { "nvim-treesitter/nvim-treesitter-textobjects" }
+    {'windwp/nvim-ts-autotag'},
+    {'tpope/vim-fugitive'},
+    {"folke/trouble.nvim"},
+    -- {"akinsho/bufferline.nvim", version = "*" }
 })
 

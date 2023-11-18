@@ -2,7 +2,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-
 vim.keymap.set('n', '<leader>ft', "<cmd>:NvimTreeToggle<cr>", {})
 vim.keymap.set('n', '<C-w>>', "<cmd>:NvimTreeResize +10<cr>", {})
 vim.keymap.set('n', '<C-w><', "<cmd>:NvimTreeResize -10<cr>", {})
@@ -29,7 +28,7 @@ require("nvim-tree").setup {
         icons = {
             show = {
                 git = false
-            }
+             }
         }
     }
 }
