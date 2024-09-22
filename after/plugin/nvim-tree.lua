@@ -27,13 +27,26 @@ require("nvim-tree").setup {
     renderer = {
         icons = {
             show = {
+                folder_arrow = false,
+                -- diagnostics = true,
                 git = false
-             }
-        }
+            },
+        },
+        indent_markers = {
+            enable = true
+        },
     },
     actions = {
         open_file = {
             quit_on_open = true,
         },
+    },
+    diagnostics = {
+        enable = true,
+        show_on_dirs = true,
+    },
+    modified = {
+        enable = true,
+        show_on_dirs = true,
     }
 }
