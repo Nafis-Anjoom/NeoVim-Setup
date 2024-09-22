@@ -30,5 +30,10 @@ require("nvim-tree").setup {
                 git = false
              }
         }
+    },
+    actions = {
+        open_file = {
+            quit_on_open = true,
+        },
     }
 }
