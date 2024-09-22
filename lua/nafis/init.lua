@@ -1,7 +1,6 @@
 require("nafis.remap")
 require("nafis.set")
 
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -20,10 +19,7 @@ require("lazy").setup({
         "catppuccin/nvim",
         name = "catppuccin",
         priority = 1000,
-        config = function()
-            vim.cmd('colorscheme catppuccin-mocha')
-        end,
-        },
+    },
     { 'nvim-lua/plenary.nvim' },
     { 'nvim-telescope/telescope.nvim', tag = '0.1.4' },
     { 'tpope/vim-commentary'},
@@ -57,6 +53,5 @@ require("lazy").setup({
     {'windwp/nvim-ts-autotag'},
     {'tpope/vim-fugitive'},
     {"folke/trouble.nvim"},
-    -- {"akinsho/bufferline.nvim", version = "*" }
 })
 
