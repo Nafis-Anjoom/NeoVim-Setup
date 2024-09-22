@@ -26,10 +26,10 @@ require("nvim-tree").setup {
     on_attach = my_on_attach,
     renderer = {
         icons = {
+            git_placement = "right_align",
             show = {
                 folder_arrow = false,
-                -- diagnostics = true,
-                git = false
+                git = true
             },
         },
         indent_markers = {
