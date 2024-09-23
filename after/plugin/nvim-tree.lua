@@ -2,7 +2,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-
 vim.keymap.set('n', '<leader>ft', "<cmd>:NvimTreeToggle<cr>", {})
 vim.keymap.set('n', '<C-w>>', "<cmd>:NvimTreeResize +10<cr>", {})
 vim.keymap.set('n', '<C-w><', "<cmd>:NvimTreeResize -10<cr>", {})
@@ -27,9 +26,27 @@ require("nvim-tree").setup {
     on_attach = my_on_attach,
     renderer = {
         icons = {
+            git_placement = "right_align",
             show = {
-                git = false
-            }
-        }
+                folder_arrow = false,
+                git = true
+            },
+        },
+        indent_markers = {
+            enable = true
+        },
+    },
+    actions = {
+        open_file = {
+            quit_on_open = true,
+        },
+    },
+    diagnostics = {
+        enable = true,
+        show_on_dirs = true,
+    },
+    modified = {
+        enable = true,
+        show_on_dirs = true,
     }
 }
